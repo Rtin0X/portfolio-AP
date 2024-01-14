@@ -31,7 +31,7 @@ const Contact = () => {
   return ( 
 
   <section className='py-16 lg:section' id='contact'>
-    <div className="container mx-auto pb-[200px]">
+    <div className="container mx-auto pb-[100px]">
       <div className='flex flex-col lg:flex-row p-10'>
         {/* text */}
         <motion.div

@@ -1,8 +1,9 @@
 import React from 'react';
 // images
 import Logo from '../assets/logo.svg';
+import { NavLink } from 'react-router-dom';
 
-
+import Banner from './Banner';
 
 const Header = () => {
   return ( 
@@ -14,9 +15,10 @@ const Header = () => {
           {/* <img src={Logo} alt="" /> */}
         </a>
         {/* button */}
-        <a href='/contact' className='btn btn-sm flex justify-center items-center'>
+        <button onClick={Banner} className='btn btn-sm flex justify-center items-center'>
           Me contacter
-        </a>
+        </button>
+        
       </div>
     </div>
   </header>

@@ -2,7 +2,7 @@ import React from 'react';
 // images
 import Image from '../assets/pp.jpg';
 // icons
-import { FaGithub, FaYoutube, FaDribbble, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -12,10 +12,12 @@ import { fadeIn } from '../variants';
 
 import Nav from '../components/Nav';
 
+import { NavLink } from 'react-router-dom';
+
 const Banner = () => {
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' >
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-[200px]">
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -37,12 +39,14 @@ const Banner = () => {
             <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7}} className='mb-8 max-w-lg mx-auto lg:mx-0'>Expérimenté de plusieurs années dans le développement web, je me suis spécialisé en tant que Développeur React JS.
             </motion.p>
             <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <a href='/contact' className='btn btn-sm flex justify-center items-center text-[15.5px]'>
-                Me contacter
-              </a>
-              <a href='/work' className='text-gradient btn-link flex justify-center items-center text-[15.5px]'>
+              <NavLink to='/contact' className='btn btn-sm flex justify-center items-center text-[15.5px]'>
+                  Me contacter
+              </NavLink>
+              <NavLink to='/work' className='text-gradient btn-link flex justify-center items-center text-[15.5px]'>
                 Mon portfolio
-              </a>
+              </NavLink>
+          
+              
             </motion.div>
             {/* socials */}
             <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7}} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>

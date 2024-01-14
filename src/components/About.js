@@ -11,6 +11,7 @@ import { fadeIn } from '../variants';
 import  Imgpp  from '../assets/Imgpp.jpg';
 
 import Nav from '../components/Nav';
+import { NavLink } from 'react-router-dom';
 
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
   });
   return (
   <section className='section' id='about' ref={ref}>
-    <div className="container mx-auto pb-[250px]">
+    <div className="container mx-auto pb-[100px]">
       <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
         {/* img */}
         <motion.div 
@@ -38,7 +39,7 @@ const About = () => {
         className='flex-1'>
           <h2 className='h2 text-accent'>à Propos </h2>
           <h3 className='h3 mb-4'>Je suis Développeur Front-End avec plus de 3 ans d'expérience.</h3>
-          <p className='mb-6'>Jeune étudiant en informatique et développeur front-end passionné, j'ai débuté mon chemin dans le monde de la création de sites web à travers des formations en ligne autodidactes. Initié aux bases fondamentales avec HTML & CSS, j'ai rapidement élargi des compétences en explorant SASS pour optimiser mes styles. Ma curiosité m'a ensuite conduit à plonger dans l'univers dynamique de JavaScript, une étape cruciale pour un développeur qui a pavé ma voie à une spécialisation dans React. Fort de mon parcours, j'ai affiné des compétences en responsive ainsi qu'une expérience utilisateur interactive faisant de mon portfolio une vitrine éloquente de mon expertise en développement front-end.</p>
+          <p className='mb-6'>Jeune étudiant en informatique et développeur front-end passionné, j'ai débuté mon chemin dans le monde de la création de sites web à travers des formations en ligne autodidactes. Initié aux bases fondamentales avec HTML & CSS, j'ai rapidement élargi des compétences en explorant SASS puis Tailwind CSS pour optimiser mes styles. Ma curiosité m'a ensuite conduit à plonger dans l'univers dynamique de JavaScript, une étape cruciale pour un développeur qui a pavé ma voie à une spécialisation dans React. Fort de mon parcours, j'ai affiné des compétences en responsive ainsi qu'une expérience utilisateur interactive faisant de mon portfolio une vitrine éloquente de mon expertise en développement front-end.</p>
           {/* stats */}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
@@ -57,33 +58,33 @@ const About = () => {
                   +
                 {
                   inView ?
-                  <CountUp start={0} end={15} duration={3} /> : null}
+                  <CountUp start={0} end={10} duration={3} /> : null}
                   
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
                 Projets <br />accomplis
               </div>
             </div>
-            <div>
+            {/* <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
                 +
                 {
                   inView ?
-                  <CountUp start={0} end={3} duration={3} /> : null}
+                  <CountUp start={0} end={10} duration={3} /> : null}
                   
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
                 Clients <br />satisfaits 
               </div>
-            </div>
+            </div> */}
           </div>
           <div className='flex gap-x-8 items-center'>
-            <a href='/contact' className='btn btn-sm flex justify-center items-center text-[15.5px]'>
+            <NavLink to='/contact' className='btn btn-sm flex justify-center items-center text-[15.5px]'>
               Me contacter
-            </a>
-            <a href='/work' className='text-gradient btn-link flex justify-center items-center text-[15.5px]'>
+            </NavLink>
+            <NavLink to='/work' className='text-gradient btn-link flex justify-center items-center text-[15.5px]'>
               Mon portfolio
-            </a>
+            </NavLink>
           </div>
         </motion.div>
       </div>

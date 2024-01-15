@@ -17,7 +17,7 @@ import Img8 from "../assets/country-app.png";
 
 const Portfolio = () => {
     return (
-        <section className='h-[2000px] m-20'>
+        <section className='h-[3100px] m-20'>
             <motion.h1 
             className='h2 leading-tight text-accent p-[55px] flex justify-center'
             variants={fadeIn('right', 0.3)}
@@ -239,7 +239,9 @@ const Portfolio = () => {
 
 
             </div>
-            <Nav />
+            <div className='flex justify-center'>
+                <Nav />
+            </div>
         </section>
     );
 };

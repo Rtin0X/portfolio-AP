@@ -22,6 +22,7 @@ const App = () => {
       <BrowserRouter>
         <Routes> 
           <Route path="/" element={<Banner />} /> 
+          <Route path="*" element={<Banner />} /> 
           <Route path="/about" element={<About />} /> 
           {/* <Services /> */}
           <Route path="/work" element={<Work />} /> 
@@ -30,7 +31,7 @@ const App = () => {
           <Route path="/veille_technologique" element={<Veille_techno />} /> 
           <Route path="/contact" element={<Contact />} /> 
           <Route path="/portfolio" element={<Portfolio />} /> 
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
       <div className='h-[300px]'></div> 

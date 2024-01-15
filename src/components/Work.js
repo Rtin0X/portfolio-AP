@@ -54,9 +54,9 @@ const Work = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={ { once: false, amount: 0.3 } }
-          className='flex-1 flex flex-col gap-y-10'>
+          className='flex-1 flex flex-col gap-y-10 gap-x-5'>
           {/* image */}
-          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer'>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl cursor-pointer gap-x-4 gap-y-4'>
             {/* overlay */}
             <a href="https://cryptowatch-moce.onrender.com/" target="_blank">
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>

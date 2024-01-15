@@ -59,7 +59,7 @@ const Banner = () => {
             </motion.div>
           </div>
           {/* image */}
-          <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'}  className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
+          <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'}  className='hidden lg:flex flex-1 lg:h-[40vh] lg:w-[40vh] lg:flex lg:justify-center '>
             <img src={Image}  className="rounded-[400px]" alt="" />
           </motion.div>
         </div>

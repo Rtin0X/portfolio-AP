@@ -21,15 +21,15 @@ const About = () => {
   });
   return (
   <section className='section' id='about' ref={ref}>
-    <div className="container mx-auto pb-[100px]">
-      <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+    <div className="container mx-auto  p-50 mt-[150px] ">
+      <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center m-10  lg:gap-x-20 lg:gap-y-0 h-screen'>
         {/* img */}
         <motion.div 
         variants={fadeIn('right', 0.3)}
         initial='hidden'
         whileInView={'show'}
         viewport={ { once: false, amount: 0.3 } }
-        className='flex-1 bg-contain bg-no-repeat h-[640px]'><img src={Imgpp} className='h-full brightness-50 border border-[4px] border-[#b936ee] rounded' alt="img-pp" /></motion.div>
+        className=' hidden lg:flex-1 lg:bg-contain lg:bg-no-repeat lg:h-[40vh] lg:flex lg:justify-start'><img src={Imgpp} className='h-full brightness-50 border border-[4px] border-[#b936ee] rounded' alt="img-pp" /></motion.div>
         {/* text */}
         <motion.div 
         variants={fadeIn('left', 0.5)}
